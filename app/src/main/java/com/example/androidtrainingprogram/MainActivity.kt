@@ -7,6 +7,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.gestures.scrollable
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -16,6 +17,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.ClickableText
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.AppBarDefaults
 import androidx.compose.material.Divider
@@ -38,12 +40,17 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDecoration
+import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.androidtrainingprogram.ui.theme.AndroidTrainingProgramTheme
 import com.example.androidtrainingprogram.ui.theme.Purple40
+import com.example.androidtrainingprogram.ui.theme.Purple80
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
@@ -118,6 +125,46 @@ fun MainScreen() {
                     color = Color.White
                 )
             )*/
+            val annotatedString = buildAnnotatedString {
+                val string = "Click on link to open web view."
+                val mStartIndex = string.indexOf("link")
+                val mEndIndex = mStartIndex + 4
+
+                withStyle(
+                    SpanStyle(
+                        color = Color.Red
+                    ),
+                ) {
+                    append(string)
+                }
+                addStyle(
+                    SpanStyle(
+                        textDecoration = TextDecoration.Underline,
+                        color = Color.Green,
+                        fontWeight = FontWeight.Bold
+                    ),
+                    start = mStartIndex,
+                    end = mEndIndex
+                )
+                addStringAnnotation(
+                    tag = "URL",
+                    annotation = "www.google.com",
+                    start = mStartIndex,
+                    end = mEndIndex
+                )
+            }
+            ClickableText(
+                text = annotatedString,
+                style = MaterialTheme.typography.body1.copy(
+                    color = if(isSystemInDarkTheme()) Purple40 else Purple80
+                ),
+                onClick = {
+                    annotatedString.getStringAnnotations("URL", it, it)
+                        .firstOrNull()?.let { stringAnnotation ->
+                            println(stringAnnotation.item)
+                        }
+                }
+            )
 
             Text(
                 modifier = Modifier

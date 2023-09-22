@@ -8,6 +8,7 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
@@ -23,6 +24,11 @@ private val lightColorScheme = lightColors(
     secondary = PurpleGrey40,
 )
 
+private val yellowColorScheme = lightColors(
+    primary = Color.Yellow,
+    secondary = PurpleGrey40,
+)
+
 @Composable
 fun AndroidTrainingProgramTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
@@ -32,7 +38,7 @@ fun AndroidTrainingProgramTheme(
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window
-            window.statusBarColor = Purple40.toArgb()
+            window.statusBarColor = Color.Transparent.toArgb()
         }
     }
 
