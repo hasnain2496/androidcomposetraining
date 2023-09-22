@@ -16,4 +16,6 @@ Vestibulum molestie est vitae fringilla laoreet. Curabitur posuere, ligula vitae
 Sed mauris leo, fringilla non eros non, posuere faucibus ante. Integer semper mauris lorem, at feugiat magna pulvinar vel. Cras eu porttitor urna, finibus mattis leo. Aliquam sagittis magna augue. Sed cursus dui vel orci convallis ornare. Praesent dolor sapien, lobortis et posuere ac, sagittis id ex. Aliquam non turpis sem. Cras molestie cursus purus, ut tempor nunc ultricies vel.
 
 Etiam elementum tempor leo vitae tempor. Proin pharetra enim vel justo suscipit, eu finibus nulla dignissim. Curabitur nibh lorem, mattis at eros eu, porta laoreet nunc. Integer libero ex, mattis vel eros sed, mollis laoreet erat. Cras consectetur at purus finibus dictum. Duis sed lacus quis lectus sollicitudin aliquet a quis urna. Morbi imperdiet dui at felis placerat porta. Integer pulvinar luctus ante, at fermentum nisl hendrerit egestas. Phasellus dignissim, ante sed malesuada aliquet, erat arcu tincidunt purus, eget sodales massa turpis id tortor. Duis rhoncus purus risus, quis finibus odio rutrum vitae. Fusce scelerisque viverra lacus.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
