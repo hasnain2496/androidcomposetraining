@@ -1,13 +1,11 @@
-package com.example.androidtrainingprogram
+package com.example.androidtrainingprogram.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.compose.BackHandler
 import androidx.compose.ui.platform.ComposeView
-import androidx.compose.ui.viewinterop.AndroidView
 
 class HomeFragment : Fragment() {
 
