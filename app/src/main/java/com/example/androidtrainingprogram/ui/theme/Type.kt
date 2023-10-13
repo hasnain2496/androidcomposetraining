@@ -12,7 +12,11 @@ import com.example.androidtrainingprogram.R
 val inclusiveSansFontFamily = FontFamily(
     Font(R.font.inclusive_sans_regular, FontWeight.Normal),
     Font(R.font.inclusive_sans_regular, FontWeight.Bold),
-    Font(R.font.inclusive_sans_italic, FontWeight.Normal, FontStyle.Italic),
+)
+
+val gabaritoFontFamily = FontFamily(
+    Font(R.font.gabarito_regular, FontWeight.Normal),
+    Font(R.font.gabarito_bold, FontWeight.Bold),
 )
 
 // Set of Material typography styles to start with
@@ -27,7 +31,7 @@ val Typography = Typography(
     h1 = TextStyle(
         fontFamily = inclusiveSansFontFamily,
         fontStyle = FontStyle.Normal,
-        fontSize = 48.sp
+        fontSize = 36.sp
     )
 )
 
