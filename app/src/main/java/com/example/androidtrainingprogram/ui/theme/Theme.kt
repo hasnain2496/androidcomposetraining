@@ -38,7 +38,7 @@ fun AndroidTrainingProgramTheme(
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window
-            window.statusBarColor = Color.Transparent.toArgb()
+            window.statusBarColor = ColorPrimary.toArgb()
         }
     }
 

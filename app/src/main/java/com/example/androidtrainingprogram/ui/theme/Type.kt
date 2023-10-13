@@ -26,7 +26,7 @@ val Typography = Typography(
     ),
     h1 = TextStyle(
         fontFamily = inclusiveSansFontFamily,
-        fontStyle = FontStyle.Italic,
+        fontStyle = FontStyle.Normal,
         fontSize = 48.sp
     )
 )

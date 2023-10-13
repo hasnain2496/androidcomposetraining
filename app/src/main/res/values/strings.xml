@@ -18,4 +18,17 @@ Sed mauris leo, fringilla non eros non, posuere faucibus ante. Integer semper ma
 Etiam elementum tempor leo vitae tempor. Proin pharetra enim vel justo suscipit, eu finibus nulla dignissim. Curabitur nibh lorem, mattis at eros eu, porta laoreet nunc. Integer libero ex, mattis vel eros sed, mollis laoreet erat. Cras consectetur at purus finibus dictum. Duis sed lacus quis lectus sollicitudin aliquet a quis urna. Morbi imperdiet dui at felis placerat porta. Integer pulvinar luctus ante, at fermentum nisl hendrerit egestas. Phasellus dignissim, ante sed malesuada aliquet, erat arcu tincidunt purus, eget sodales massa turpis id tortor. Duis rhoncus purus risus, quis finibus odio rutrum vitae. Fusce scelerisque viverra lacus.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="facts">
+        <item>There is nothing more deceptive than an obvious fact.</item>
+        <item>It is the absence of facts that frightens people: the gap you open, into which they pour their fears, fantasies, desires.</item>
+        <item>Facts are like cows. If you look them in the face long enough, they generally run away.</item>
+        <item>It is the absence of facts that frightens people: the gap you open, into which they pour their fears, fantasies, desires.</item>
+        <item>Facts are like cows. If you look them in the face long enough, they generally run away.</item>
+        <item>There is nothing more deceptive than an obvious fact.</item>
+        <item>Facts are like cows. If you look them in the face long enough, they generally run away.</item>
+        <item>It is the absence of facts that frightens people: the gap you open, into which they pour their fears, fantasies, desires.</item>
+        <item>Facts are like cows. If you look them in the face long enough, they generally run away.</item>
+        <item>There is nothing more deceptive than an obvious fact.</item>
+    </string-array>
 </resources>
